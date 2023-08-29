@@ -1,3 +1,4 @@
+import 'package:ecommerce/Screens/sign-in.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
@@ -19,13 +20,13 @@ class _SplashScreenState extends State<SplashScreen> {
     _navigatetohome();
   }
   _navigatetohome()async{
-    await Future.delayed(Duration(milliseconds:2000 ),(){});
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>MainScreen()));
+    await Future.delayed(const Duration(milliseconds:2000 ),(){});
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignInScreen()));
   }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[900],
+      backgroundColor: const Color(0xff6E4F38),
         body: Center(
           child: Container(
             child: const Text('E-Commerce APP',
