@@ -39,19 +39,19 @@ class _SignInScreenState extends State<SignInScreen> {
 
             child: Column(
               children: <Widget>[
-                  logoWidget("assests/Images/avatar.png"),
+                  logoWidget("assets/Images/avatar.png"),
 
-                SizedBox(
+                const SizedBox(
                   height: 60,
 
                 ),
                 reusableTextField("Enter UserName", Icons.person_outline, false, _emilTextController),
 
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 reusableTextField("Enter your Password", Icons.lock_outline, true, _passwordTextController),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 signInSignUpButton(context, true, (){}),
@@ -91,5 +91,4 @@ class _SignInScreenState extends State<SignInScreen> {
       ],
     );
   }
-
 }
