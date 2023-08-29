@@ -24,14 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       primaryColor: Colors.purple[900],
       ),
-      home:const MainScreen(),
-      // routes: {
-      //   // '/loading': (context) => const LoadingScreen(),
-      //   // '/signIn': (context) => const SignInScreen(),
-      //   // '/signUp': (context) => const SignUpScreen(),
-      //   // '/main': (context) => const MainScreen(),
-      // },
-
+      home: const SplashScreen(),
     );
   }
 }

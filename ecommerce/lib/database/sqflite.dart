@@ -18,6 +18,7 @@ class DatabaseHelper {
   // only have a single app-wide reference to the database
   late Database _database;
   Future<Database> get database async {
+    // ignore: unnecessary_null_comparison
     if (_database != null) return _database;
     // lazily instantiate the db the first time it is accessed
 
