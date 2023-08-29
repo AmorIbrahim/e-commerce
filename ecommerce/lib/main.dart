@@ -76,8 +76,10 @@ class _MainScreenState extends State<MainScreen> {
             icon: Icon(Icons.account_circle),
             label: 'Account',
           ),
+
         ],
       ),
+
     );
   }
 }
